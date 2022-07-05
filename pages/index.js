@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Landing from '../components/Home'
 
 export default function Home() {
   return (
-    <div className="text-center text-[#885af8]">
-      Ascend
+    <div className="bg-[#fcfbff]">
+      <Landing />
     </div>
   )
 }
