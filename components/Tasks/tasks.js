@@ -7,7 +7,7 @@ export const tasks = [
         due: "29 April, 2022"
     },
     {
-        name: "Create login page ui",
+        name: "Create login page ui assoon as possible",
         label: "Frontend",
         priority: "Medium",
         status: "Todo",
