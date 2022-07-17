@@ -14,7 +14,6 @@ export default NextAuth({
   ],
   callbacks: {
     async signIn({ user }) {
-      console.log(user)
         try {
 
           const user_exist = await prisma.user.findUnique({

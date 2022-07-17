@@ -9,7 +9,6 @@ export default function Home() {
 
   if(session){
 
-    console.log(session)
     return (
       <div>
         <Dashboard/>
