@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import { signIn } from "next-auth/react"
 
 const Hero = () => {
     return (
@@ -12,7 +13,7 @@ const Hero = () => {
                 </div>
 
                 <div className='my-4'>
-                    <button className='border-2 border-[#885af8] bg-[#885af8] text-white font-semibold py-1 px-3 rounded inline-flex items-center'>Get Started</button>
+                    <button className='border-2 border-[#885af8] bg-[#885af8] text-white font-semibold py-1 px-3 rounded inline-flex items-center'   onClick={() => signIn()}>Get Started</button>
 
                     <button className="border-2 border-[#885af8] text-[#885af8] font-semibold py-1 px-3 rounded inline-flex items-center mx-8">
                         Watch Demo

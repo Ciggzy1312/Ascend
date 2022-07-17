@@ -6,6 +6,7 @@ import {
 } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { FaRegComments } from "react-icons/fa";
+import { signOut } from "next-auth/react"
 
 const Sidebar = () => {
     return (
@@ -44,7 +45,7 @@ const Sidebar = () => {
                                     Settings
                                 </h3>
                             </div>
-                            <div className="flex mb-2 justify-start items-center gap-4 pl-5 border border-gray-200  hover:bg-[#ecdef5] p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto">
+                            <div   onClick={() => signOut()} className="flex mb-2 justify-start items-center gap-4 pl-5 border border-gray-200  hover:bg-[#ecdef5] p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto">
                                 <MdOutlineLogout className="text-2xl text-gray-400 group-hover:text-[#885af8] " />
                                 <h3 className="text-base font-semibold ">
                                     Logout
